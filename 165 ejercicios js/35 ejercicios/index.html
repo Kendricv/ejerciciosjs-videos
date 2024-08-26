@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de Programación en JavaScript</title>
+</head>
+
+<body>
+  <h1>Ejercicios de Programación en JavaScript</h1>
+  <script>
+    /* 1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFunción("Hola Mundo") devolverá 10 */
+    
+
+    /* 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
+
+
+
+    /* 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe.
+     miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
+
+
+
+    /* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo */
+
+
+
+    /* 5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH" */
+
+
+
+    /* 6) Programa una función para contar el número de veces que se repite una palabra en un texto largo, pe. miFuncion("hola mundo adios mundo", "mundo") devolverá 2 */
+
+
+
+    /* 7) Programa una función que valide si una palabra o frase dada, es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true */
+
+
+
+    /* 8) Programa una función que elimine cierto patrón de caracteres de un texto dado, pe. miFuncion("xyz1, xyz2, xyz3, xyz4 y xyz5", "xyz") devolverá  "1, 2, 3, 4 y 5 */
+
+
+
+    /* 9) Programa una función que obtenga un numero aleatorio entre 501 y 600 */
+
+
+
+    /* 10) Programa una función que reciba un número y evalúe si es capicúa o no (que se lee igual en un sentido que en otro), pe. miFuncion(2002) devolverá true  */
+
+
+
+    /* 11) Programa una función que calcule el factorial de un número (El factorial de un entero positivo n, se define como el producto de todos los números enteros positivos desde 1 hasta n), pe. miFuncion(5) devolverá 120 */
+
+
+
+    /* 12) Programa una función que determine si un número es primo (aquel que solo es divisible por sí mismo y 1) o no, pe. miFuncion(7) devolverá true */
+
+
+
+    /* 13) Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar */
+
+
+
+    /* 14) Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F */
+
+
+
+    /* 15) Programa una función para convertir números de base binaria a decimal y viceversa, pe. miFuncion(100,2) devolverá 4 base 10 */
+
+
+
+    /* 16) Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800 */
+
+
+
+    /* 17) Programa una función que dada una fecha válida determine cuantos años han pasado hasta el día de hoy, pe. miFuncion(new Date(1984,4,23)) devolverá 35 años (en 2020) */
+
+
+
+    /* 18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe. miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5 */
+
+
+
+    /* 19) Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero */
+
+
+
+    /* 20) Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero */
+
+
+
+    /* 21) Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25] */
+
+
+
+    /* 22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60] */
+
+
+
+    /* 23) Programa una función que dado un array de números devuelva un objeto con 2 arreglos en el primero almacena los números pares y en el segundo los impares, pe. miFuncion([1,2,3,4,5,6,7,8,9,0]) devolverá {pares: [2,4,6,8,0], impares: [1,3,5,7,9]} */
+
+
+
+    /* 24) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente, pe. miFuncion([7, 5,7,8,6]) devolverá { asc: [5,6,7,7,8], desc: [8,7,7,6,5] }*/
+
+
+
+    /* 25) Programa una función que dado un arreglo de elementos, elimine los duplicados, pe. miFuncion(["x", 10, "x", 2, "10", 10, true, true]) devolverá ["x", 10, 2, "10", true]  */
+
+
+
+    /* 26) Programa una función que dado un arreglo de números obtenga el promedio, pe. promedio([9,8,7,6,5,4,3,2,1,0]) devolverá 4.5 */
+
+
+
+    /* 27) Programa una clase llamada Pelicula.
+        La clase recibirá un objeto al momento de instanciarse con los siguentes datos: id de la película en IMDB, titulo, director, año de estreno, país o países de origen, géneros y calificación en IMBD.
+          - Todos los datos del objeto son obligatorios.
+          - Valida que el id IMDB tenga 9 caracteres, los primeros 2 sean letras y los 7 restantes números.
+          - Valida que el título no rebase los 100 caracteres.
+          - Valida que el director no rebase los 50 caracteres.
+          - Valida que el año de estreno sea un número entero de 4 dígitos.
+          - Valida que el país o paises sea introducidos en forma de arreglo.
+          - Valida que los géneros sean introducidos en forma de arreglo.
+          - Valida que los géneros introducidos esten dentro de los géneros aceptados*.
+          - Crea un método estático que devuelva los géneros aceptados*.
+          - Valida que la calificación sea un número entre 0 y 10 pudiendo ser decimal de una posición.
+          - Crea un método que devuelva toda la ficha técnica de la película.
+          - Apartir de un arreglo con la información de 3 películas genera 3 instancias de la clase de forma automatizada e imprime la ficha técnica de cada película.
+
+        * Géneros Aceptados: Action, Adult, Adventure, Animation, Biography, Comedy, Crime, Documentary ,Drama, Family, Fantasy, Film Noir, Game-Show, History, Horror, Musical, Music, Mystery, News, Reality-TV, Romance, Sci-Fi, Short, Sport, Talk-Show, Thriller, War, Western.
+        */
+
+        // 1. Contar el número de caracteres en una cadena
+function contarLetras(texto) {
+  return texto.length;
+}
+
+// 2. Recortar un texto según el número de caracteres indicados
+function recortar(texto, largo) {
+  return texto.substring(0, largo);
+}
+
+// 3. Convertir una cadena de texto en un array separado por un carácter
+function separarTexto(texto, separador) {
+  return texto.split(separador);
+}
+
+// 4. Repetir un texto X veces
+function repetir(texto, veces) {
+  let resultado = '';
+  for (let i = 0; i < veces; i++) {
+    resultado += texto + ' ';
+  }
+  return resultado.trim();
+}
+
+// 5. Invertir una cadena de texto
+function invertir(texto) {
+  return texto.split('').reverse().join('');
+}
+
+// 6. Contar el número de veces que se repite una palabra en un texto
+function contarPalabras(texto, palabra) {
+  return texto.split(palabra).length - 1;
+}
+
+// 7. Validar si una palabra o frase es un palíndromo
+function esPalindromo(texto) {
+  let limpio = texto.toLowerCase().replace(/[\W_]/g, "");
+  return limpio === limpio.split('').reverse().join('');
+}
+
+// 8. Eliminar cierto patrón de caracteres de un texto
+function eliminarTexto(texto, patron) {
+  return texto.split(patron).join('');
+}
+
+// 9. Obtener un número aleatorio entre 501 y 600
+function numeroAleatorio() {
+  return Math.floor(Math.random() * 100) + 501;
+}
+
+// 10. Evaluar si un número es capicúa
+function esCapicua(num) {
+  let str = num.toString();
+  return str === str.split('').reverse().join('');
+}
+
+// 11. Calcular el factorial de un número
+function factorial(num) {
+  let resultado = 1;
+  for (let i = num; i > 1; i--) {
+    resultado *= i;
+  }
+  return resultado;
+}
+
+// 12. Determinar si un número es primo
+function esPrimo(num) {
+  if (num < 2) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+// 13. Determinar si un número es par o impar
+function esPar(num) {
+  return num % 2 === 0 ? "Par" : "Impar";
+}
+
+// 14. Convertir grados Celsius a Fahrenheit y viceversa
+function convertirGrados(grado, tipo) {
+  return tipo === "C" ? (grado * 9/5) + 32 : (grado - 32) * 5/9;
+}
+
+// 15. Convertir de binario a decimal y viceversa
+function convertirBase(numero, base) {
+  return base === 2 ? parseInt(numero, base) : numero.toString(base);
+}
+
+// 16. Calcular el monto final después de aplicar un descuento
+function calcularDescuento(monto, descuento) {
+  return monto - (monto * (descuento / 100));
+}
+
+// 17. Calcular cuántos años han pasado desde una fecha dada
+function calcularAnios(fecha) {
+  let hoy = new Date();
+  let anios = hoy.getFullYear() - fecha.getFullYear();
+  return anios;
+}
+
+// 18. Contar vocales y consonantes en un texto
+function contarVocalesConsonantes(texto) {
+  let vocales = texto.match(/[aeiouáéíóúü]/gi)?.length || 0;
+  let consonantes = texto.match(/[bcdfghjklmnpqrstvwxyz]/gi)?.length || 0;
+  return { vocales, consonantes };
+}
+
+// 19. Validar si un texto es un nombre válido
+function validarNombre(nombre) {
+  const regex = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+  return regex.test(nombre);
+}
+
+// 20. Validar si un email es válido
+function validarEmail(email) {
+  const regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+  return regex.test(email);
+}
+
+// 21. Elevar al cuadrado cada número de un array
+function elevarCuadrado(arr) {
+  return arr.map(num => num ** 2);
+}
+
+// 22. Obtener el número más alto y más bajo de un array
+function mayorYMenor(arr) {
+  return [Math.max(...arr), Math.min(...arr)];
+}
+
+// 23. Separar números en pares e impares
+function separarParesImpares(arr) {
+  let pares = arr.filter(num => num % 2 === 0);
+  let impares = arr.filter(num => num % 2 !== 0);
+  return { pares, impares };
+}
+
+// 24. Ordenar números de forma ascendente y descendente
+function ordenarArr(arr) {
+  return {
+    ascendente: [...arr].sort((a, b) => a - b),
+    descendente: [...arr].sort((a, b) => b - a),
+  };
+}
+
+// 25. Eliminar duplicados de un array
+function eliminarDuplicados(arr) {
+  return [...new Set(arr)];
+}
+
+// 26. Calcular el promedio de un array de números
+function promedio(arr) {
+  let suma = arr.reduce((acum, valor) => acum + valor, 0);
+  return suma / arr.length;
+}
+
+// 27. Clase Pelicula con géneros reducidos en español
+class Pelicula {
+  constructor({ id, titulo, director, año, pais, generos, calificacion }) {
+    this.id = id;
+    this.titulo = titulo;
+    this.director = director;
+    this.año = año;
+    this.pais = pais;
+    this.generos = generos;
+    this.calificacion = calificacion;
+
+    this.validar();
+  }
+
+  static generosAceptados() {
+    return ["Acción", "Aventura", "Comedia", "Drama", "Fantasía", "Terror", "Romance", "Ciencia ficción"];
+  }
+
+  validar() {
+    if (!/^[a-zA-Z]{2}\d{7}$/.test(this.id)) throw new Error("ID inválido");
+    if (this.titulo.length > 100) throw new Error("Título muy largo");
+    if (this.director.length > 50) throw new Error("Nombre director muy largo");
+    if (this.año.toString().length !== 4) throw new Error("Año inválido");
+    if (!Array.isArray(this.pais)) throw new Error("El país erroneo");
+    if (!Array.isArray(this.generos)) throw new Error("Los géneros erroneos");
+    this.generos.forEach(genero => {
+      if (!Pelicula.generosAceptados().includes(genero)) throw new Error(`Género ${genero} no es aceptado`);
+    });
+    if (this.calificacion < 0 || this.calificacion > 10) throw new Error("Calificación inválida");
+  }
+
+  fichaTecnica() {
+    return `Título: ${this.titulo}\nDirector: ${this.director}\nAño: ${this.año}\nPaís: ${this.pais.join(", ")}\nGéneros: ${this.generos.join(", ")}\nCalificación: ${this.calificacion}`;
+  }
+}
+
+// uso
+const peliculas = [
+  { id: "tt1234567", titulo: "Rapidso y furiosos", director: "Pedro juanito", año: 2024, pais: ["usa", "Nueva Zelanda"], generos: ["Aventura", "Fantasía"], calificacion: 8.8 },
+  { id: "tt2345678", titulo: "Viaje al centro de la tierra", director: "Juan Camanei", año: 2024, pais: ["usa"], generos: ["Drama", "Romance"], calificacion: 7.8 },
+  { id: "tt3456789", titulo: "Interés telar", director: "Mi papa", año: 2024, pais: ["usa", "Reino Unido"], generos: ["Acción", "Ciencia ficción"], calificacion: 8.7 },
+];
+
+peliculas.forEach(pelicula => {
+  let nuevaPelicula = new Pelicula(pelicula);
+  console.log(nuevaPelicula.fichaTecnica());
+});
+
+// 1. Contar el número de caracteres en una cadena
+console.log(contarLetras("Hola Mundo")); // 10
+
+// 2. Recortar un texto según el número de caracteres indicados
+console.log(recortar("Hola Mundo", 4)); // "Hola"
+
+// 3. Convertir una cadena de texto en un array separado por un carácter
+console.log(separarTexto("Hola qué tal", " ")); // ["Hola", "qué", "tal"]
+
+// 4. Repetir un texto X veces
+console.log(repetir("Hola Mundo", 3)); // "Hola Mundo Hola Mundo Hola Mundo"
+
+// 5. Invertir una cadena de texto
+console.log(invertir("Hola Mundo")); // "odnuM aloH"
+
+// 6. Contar el número de veces que se repite una palabra en un texto
+console.log(contarPalabras("Hola mundo, adiós mundo", "mundo")); // 2
+
+// 7. Validar si una palabra o frase es un palíndromo
+console.log(esPalindromo("Salas")); // true
+console.log(esPalindromo("Anita lava la tina")); // true
+
+// 8. Eliminar cierto patrón de caracteres de un texto
+console.log(eliminarTexto("xyz1, xyz2, xyz3", "xyz")); // "1, 2, 3"
+
+// 9. Obtener un número aleatorio entre 501 y 600
+console.log(numeroAleatorio()); // Ejemplo: 537 (dependerá de la ejecución)
+
+// 10. Evaluar si un número es capicúa
+console.log(esCapicua(2002)); // true
+console.log(esCapicua(12321)); // true
+console.log(esCapicua(1234)); // false
+
+// 11. Calcular el factorial de un número
+console.log(factorial(5)); // 120
+console.log(factorial(3)); // 6
+
+// 12. Determinar si un número es primo
+console.log(esPrimo(7)); // true
+console.log(esPrimo(8)); // false
+
+// 13. Determinar si un número es par o impar
+console.log(esPar(29)); // "Impar"
+console.log(esPar(28)); // "Par"
+
+// 14. Convertir grados Celsius a Fahrenheit y viceversa
+console.log(convertirGrados(0, "C")); // 32 (Celsius a Fahrenheit)
+console.log(convertirGrados(32, "F")); // 0 (Fahrenheit a Celsius)
+
+// 15. Convertir de binario a decimal y viceversa
+console.log(convertirBase(100, 2)); // 4 (binario a decimal)
+console.log(convertirBase(4, 10)); // 100 (decimal a binario)
+
+// 16. Calcular el monto final después de aplicar un descuento
+console.log(calcularDescuento(1000, 20)); // 800
+
+// 17. Calcular cuántos años han pasado desde una fecha dada
+console.log(calcularAnios(new Date(1990, 7, 23))); // Ejemplo: 34 (dependerá del año actual)
+
+// 18. Contar vocales y consonantes en un texto
+console.log(contarVocalesConsonantes("Hola Mundo")); // { vocales: 4, consonantes: 5 }
+
+// 19. Validar si un texto es un nombre válido
+console.log(validarNombre("Jonathan MirCha")); // true
+console.log(validarNombre("123Nombre")); // false
+
+// 20. Validar si un email es válido
+console.log(validarEmail("jonmircha@gmail.com")); // true
+console.log(validarEmail("correo@incorrecto")); // false
+
+// 21. Elevar al cuadrado cada número de un array
+console.log(elevarCuadrado([1, 4, 5])); // [1, 16, 25]
+
+// 22. Obtener el número más alto y más bajo de un array
+console.log(mayorYMenor([1, 4, 5, 99, -60])); // [99, -60]
+
+// 23. Separar números en pares e impares
+console.log(separarParesImpares([1, 2, 3, 4, 5, 6, 7, 8, 9, 0])); // {pares: [2,4,6,8,0], impares: [1,3,5,7,9]}
+
+// 24. Ordenar números de forma ascendente y descendente
+console.log(ordenarArr([7, 5, 7, 8, 6])); // { ascendente: [5,6,7,7,8], descendente: [8,7,7,6,5] }
+
+// 25. Eliminar duplicados de un array
+console.log(eliminarDuplicados(["x", 10, "x", 2, "10", 10, true, true])); // ["x", 10, 2, "10", true]
+
+// 26. Calcular el promedio de un array de números
+console.log(promedio([9, 8, 7, 6, 5, 4, 3, 2, 1, 0])); // 4.5
+
+
+
+  </script>
+</body>
+
+</html>
